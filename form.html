@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        form {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #CF4420
+}
+body{
+    background-color: #660000
+}
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: white;
+}
+
+
+form input[type="text"],
+form input[type="number"],
+form select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form select:focus {
+    border-color: #660000;
+}
+
+
+form input[type="submit"] {
+    background-color: #660000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+
+form input[type="submit"]:hover {
+    background-color: white;
+}
+
+
+form select {
+    padding: 10px;
+}
+h2{
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+    <h2>Please answer these questions regarding your social usage</h2>
+   
+    <form action="/submit" method="post">
+        <label for="input1">Name:</label>
+        <input type="text" id="input1" name="input1" required><br><br>
+       
+        <label for="input2">Most Used Device Type:</label>
+        <select name="devices" id="devices">
+            <option value="smartphone">Smartphone</option>
+            <option value="computer/laptop">Computer/Laptop</option>
+            <option value="tablet">Tablet</option>
+        </select>
+        <br><br>
+       
+        <label for="input2">Platform:</label>
+        <select name="platforms" id="platforms">
+            <option value="instagram">Instagram</option>
+            <option value="youtube">YouTube</option>
+            <option value="facebook">Facebook</option>
+            <option value="tiktok">TikTok</option>
+        </select>
+        <br><br>
+       
+        <label for="input3">Total Time Spent (minutes):</label>
+        <input type="number" id="input3" name="input3" min="0" required><br><br>
+       
+        <label for="input4">Watch Reason:</label>
+        <select name="reason" id="reason">
+            <option value="procrastination">Procrastination</option>
+            <option value="habit">Habit</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="boredom">Boredom</option>
+        </select>
+        <br><br>
+       
+        <label for="input5">How addicted are you on a scale of 1 to 10?:</label>
+        <input type="number" id="input5" name="input5" min="0" max="10" required><br><br>
+       
+        <input type="submit" value="Submit">
+    </form>
+
+
+    <div style="position: relative; width: 400px; height: 300px;">
+        <img src="hokie2.png" alt="Image" style="position: absolute; top: -600px; left: 30px;">
+        <img src="hokie.png" alt="Image" style="position: absolute; top: -600px; left: 1125px;">
+      </div>
+   
+
+
+</body>
+</html>
+
+
+  </body>
+</html>
